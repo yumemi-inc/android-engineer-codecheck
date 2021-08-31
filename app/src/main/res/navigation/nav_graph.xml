@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/oneFragment">
+
+    <fragment
+        android:id="@+id/oneFragment"
+        android:name="jp.co.yumemi.android.code_check.OneFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_one">
+        <action
+            android:id="@+id/action_repositoriesFragment_to_repositoryFragment"
+            app:destination="@id/twoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="jp.co.yumemi.android.code_check.TwoFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_two">
+        <argument
+            android:name="item"
+            app:argType="jp.co.yumemi.android.code_check.item" />
+    </fragment>
+
+</navigation>
