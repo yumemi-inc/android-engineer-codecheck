@@ -13,7 +13,7 @@
 ### 環境
 
 - IDE：Android Studio Arctic Fox | 2020.3.1 Patch 1
-- Kotlin：1.5.30
+- Kotlin：1.5.31
 - Java：11
 - Gradle：7.0.1
 - minSdk：23
