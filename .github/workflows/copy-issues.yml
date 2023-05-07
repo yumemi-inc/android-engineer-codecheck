@@ -130,7 +130,7 @@ jobs:
           echo "value=${result}" >> $GITHUB_OUTPUT
 
   create-issues:
-    needs: [create-issue-labels, get-myrepo-milestones, get-issues, get-myrepo-issues]
+    needs: [ create-issue-labels, get-myrepo-milestones, get-issues, get-myrepo-issues ]
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
