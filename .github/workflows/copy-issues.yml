@@ -160,7 +160,7 @@ jobs:
           body="${body//$'\r'/\\r}"
           
           if [[ "$body" =~ '#'[0-9] ]]; then
-              link=$(echo "$body" | grep -o "#[0-9]+")
+              link=$(echo "$body" | grep -o -E "#[0-9]+")
               num=$(echo $link | tr -d '#')
           
               issues=$(echo '${{ needs.get-issues.outputs.issues }}' | jq '[ . as $d | keys[] | $d[.] + {index:.} ]')
