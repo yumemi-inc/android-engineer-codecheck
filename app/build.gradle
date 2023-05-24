@@ -7,6 +7,7 @@ plugins {
 }
 
 android {
+    namespace 'jp.co.yumemi.android.code_check'
     compileSdk 31
 
     defaultConfig {
