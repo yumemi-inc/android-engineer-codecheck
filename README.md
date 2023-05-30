@@ -12,7 +12,7 @@
 
 ### 環境
 
-- IDE：Android Studio Flamingo | 2022.2.1 Patch 1
+- IDE：Android Studio Flamingo | 2022.2.1 Patch 2
 - Kotlin：1.6.21
 - Java：17
 - Gradle：8.0
